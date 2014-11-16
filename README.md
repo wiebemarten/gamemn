@@ -6,10 +6,25 @@ The program was enhanced: Now it can solve any variants on this game, reaching a
 
 The program outputs a list of all possible solutions to the given goal M and the number set with length n. An option to stop after finding just one solution is also created.
 
-As the complexity of this problem quickly rises, as can be seen when analysing the number of possibilities:
+
+About
+=====
+
+This code was created for Introduction to Computing Science at the University of Groningen in 2014.
+
+More information about this project can be found in the report:
+[http://wmcode.nl/cs/gameofmnReport.pdf](http://wmcode.nl/cs/gameofmnReport.pdf)
+
+
+Running Time
+============
+
+The complexity of this problem quickly rises, which can be seen when analysing the number of possibilities:
 
 ``P(n) = C(n-1) * n! * 4^(n-1) ``
 (Where C(n) is the Catalan Number function, and n! is the factorial of n)
+
+Thus, the time it takes to list all solution increases rapidly.
 
 <table>
 <tr>
@@ -189,12 +204,4 @@ Also, although the program tries to limit memory use, still a significant amount
 
 
 However, it should be very possible to paralellize this algorithm and run it on a supercomputer.
-
-About
-=====
-
-This code was created for Introduction to Computing Science at the University of Groningen in 2014.
-
-More information about this project can be found in the report:
-[http://wmcode.nl/cs/gameofmnReport.pdf](http://wmcode.nl/cs/gameofmnReport.pdf)
 
